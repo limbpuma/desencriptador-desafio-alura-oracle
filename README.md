@@ -7,9 +7,13 @@ Este proyecto es un encriptador y desencriptador de texto que desarrollé como e
 Funcionalidades:
 
 Encriptación de texto: convierte las vocales en palabras específicas.
+
 Desencriptación de texto: devuelve el texto original a partir de las palabras encriptadas.
+
 Copiar al portapapeles: permite copiar fácilmente el resultado encriptado o desencriptado.
+
 Eliminar texto: borra el contenido del campo de entrada y el resultado.
+
 Diseño responsivo y atractivo.
 
 
