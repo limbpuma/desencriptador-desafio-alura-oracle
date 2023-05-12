@@ -1,0 +1,420 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* General CSS */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*
+
+fonts:
+
+  font-family: 'Inter', sans-serif;
+  --font-size-xl: 3.6rem;
+  --font-size-l: 2.4rem;
+  --font-size-m: 1.8rem;
+  --font-size-s: 1.6rem;
+  --font-weight-500: 500;
+  --font-weight-600: 600;
+
+colors:
+
+color1: #E5E5E5
+color2: #0A3871
+color3: #D8DFE8
+color4: ##FFFFFF
+
+*/
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  color: #0a3871;
+  background-color: #e5e5e5;
+}
+main {
+  display: flex;
+  height: 100vh;
+}
+h1 {
+  font-size: 3.6rem;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+p {
+  font-size: 1.6rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 80vh;
+  padding: 2rem;
+  margin: auto;
+}
+.section1 {
+  padding: 0 2rem;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+textarea {
+  border: none;
+  outline: none;
+}
+
+.input {
+  background-color: transparent;
+  border: none;
+  margin-bottom: 2rem;
+  font-size: 3.4rem;
+  font-size: 3.6rem;
+  color: #0a3871;
+  font-weight: 400;
+  white-space: pre-wrap;
+  height: 100%;
+  line-height: none;
+}
+textarea::placeholder {
+  color: #0a3871;
+
+}
+input:focus {
+  outline: none;
+}
+.logo {
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 2rem;
+  height: auto;
+}
+.text-section {
+  width: 90%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.btn-group {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.question-img {
+  width: 1rem;
+  height: 1rem;
+}
+.remove-img {
+  margin-bottom: rem;
+  width: 3rem;
+  height: fit-content;
+  flex: 0 0 auto;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 50%;
+  padding: 0.61rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.50);
+  visibility: hidden;
+}
+.info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+.info p {
+  margin-left: 0.5rem;
+}
+.btn {
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  height: 5rem;
+  color: #d8dfe8;
+  background-color: #0a3871;
+  font-size: 1.6rem;
+  border-radius: 2.4rem;
+  padding: 1rem;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(
+    to bottom right,
+    transparent 50%,
+    #0a3871 50%
+  );
+  background-position: 0 0;
+  background-size: 200% 200%;
+}
+.btn:hover:nth-child(2) {
+  color: #d8dfe8;
+  background-color: #d8dfe8;
+  background-position: 100% 100%;
+  background-clip: padding-box;
+  transition: all 0.4s ease-in-out;
+}
+.btn-group button:nth-child(3) {
+  background-color: #d8dfe8;
+  color: #0a3871;
+  border: 0.2rem solid #0a3871;
+  margin-bottom: 1rem;
+}
+.section2 {
+  width: 40%;
+  padding: 0 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  background-color: #ffffff;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 4rem;
+}
+.section2 h2 {
+  margin-bottom: 2rem;
+  font-weight: 700;
+}
+.section2-img {
+  max-width: 70%;
+  height: auto;
+}
+.section2 .btn {
+  background-color: #ffffff;
+  color: #0a3871;
+  border: 0.2rem solid #0a3871;
+  width: 80%;
+  visibility: hidden;
+  margin-bottom: 0rem;
+}
+.mensaje-copiado {
+  margin-top: 0.5rem;
+}
+
+/* para dispositivos pequeños, como teléfonos móviles */
+@media (max-width: 576px) {
+  main,
+  .container,
+  .section1,
+  .section2 {
+    flex-direction: column;
+    height: max-content;
+    width: 100%;
+    align-items: center;
+  }
+  .section2 {
+    margin-top: 2rem;
+    padding: 2rem 1rem;
+    min-height: 10vh;
+    height: max-content;
+  }
+  .info {
+    width: 100%;
+    height: max-content;
+  }
+  .input {
+    margin-top: 2rem;
+    font-size: 2.4rem;
+    min-height: 30vh;
+    height: max-content;
+  }
+
+  .btn-group {
+    flex-direction: column;
+  }
+  .btn {
+    margin: 1rem 0;
+    width: 100%;
+  }
+  .section2-img {
+    display: none;
+  }
+}
+
+/* para dispositivos medianos, como tablets */
+@media (min-width: 576px) and (max-width: 992px) {
+  main,
+  .container,
+  .section1,
+  .section2 {
+    flex-direction: column;
+    height: max-content;
+    width: 100%;
+    align-items: center;
+  }
+  .section2 {
+    margin-top: 2rem;
+    padding: 2rem 2rem;
+    min-height: 20vh;
+    height: max-content;
+  }
+  .info {
+    width: 100%;
+    height: max-content;
+  }
+  .input {
+    margin-top: 2rem;
+    font-size: 2.4rem;
+    min-height: 60vh;
+    height: max-content;
+  }
+  .btn {
+    margin: 1rem 0;
+    width: 45%;
+  }
+  .section2-img {
+    display: none;
+  }
+  #boton-copiar {
+    width: 45%;
+  }
+}
+/* para dispositivos grandes, como laptops y pantallas de escritorio */
+@media (min-width: 992px) {
+  .remove-img:hover {
+    cursor: pointer;
+  }
+}
